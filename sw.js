@@ -1,5 +1,5 @@
-/* SAKU Kuliah v1.2.0 — service worker (cache tampilan agar cepat & bisa dibuka offline) */
-const CACHE = 'saku-v1.2.0';
+/* SAKU Kuliah v1.2.1 — service worker (cache tampilan agar cepat & bisa dibuka offline) */
+const CACHE = 'saku-v1.2.1';
 const ASET = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASET)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => {
